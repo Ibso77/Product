@@ -73,6 +73,16 @@
     .management__title-wrapper{
     width: 90%;
     }
+    .support__item{
+        width: 100%;
+    }
+    .support__list{
+        @include Display($ITEMS:center,$JUSTIFY:start,$GAP:20px);
+        width: 100%;
+    }
+    .item_text{
+        width: 100%;
+    }
     .management__title-1 {
         margin-bottom: 16px;
     }
@@ -82,6 +92,11 @@
         flex-direction: column;
     }
     .support__title-wrapper {
-        width: 90%;
+        width: 100%;
+    }
+}
+@media (max-width:400px){
+    .service-img{
+        width: 100%;
     }
 }
