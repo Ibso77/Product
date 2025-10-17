@@ -1,0 +1,87 @@
+.service-section {
+    padding: 150px 0;
+}
+.management__title-wrapper{
+    width: 486px;
+}
+.management {
+    margin-bottom: 150px;
+    @include Display($ITEMS:center,$JUSTIFY:space-between,$GAP:5px);
+}
+.text-1 {
+    @include Textstyle($CLR:$clr-text,$FW:600,$FS:16px,$LH:100%);
+    margin-bottom: 8px;
+}
+.management__title-1 {
+    @include Textstyle($CLR:$clr-text,$FW:700,$FS:32px,$LH:100%);
+    margin-bottom: 130px;
+}
+.management__subtitle {
+    @include Textstyle($CLR:$clr-text,$FW:600,$FS:16px,$LH:26px);
+    margin-bottom: 12px;
+}
+.text-2 {
+    @include Textstyle($CLR:$clr-text,$FW:400,$FS:16px,$LH:26px);
+}
+.management__subtitle-1 {
+    @include Textstyle($CLR:$clr-text,$FW:600,$FS:16px,$LH:26px);
+    margin-bottom: 12px;
+}
+.text-3 {
+    @include Textstyle($CLR:$clr-text,$FW:400,$FS:16px,$LH:26px);
+}
+.service__wrapper-2 {
+    margin-bottom: 150px;
+    @include Display($ITEMS:center,$JUSTIFY:space-between,$GAP:5px);
+}
+.support__title-wrapper {
+    width: 450px;
+}
+.support__title {
+    @include Textstyle($CLR:$clr-text,$FW:700,$FS:32px,$LH:100%);
+    margin-bottom: 23px;
+}
+.support__text {
+    @include Textstyle($CLR:$clr-text,$FW:400,$FS:16px,$LH:26px);
+}
+.support__list {
+    margin-top: 30px;
+    @include Display($ITEMS:center,$JUSTIFY:start,$GAP:30px);
+    flex-direction: column;
+    width: 450px;
+}
+.support__item {
+    @include Display($ITEMS:center,$JUSTIFY:start,$GAP:30px);
+}
+.item_text {
+    @include Textstyle($CLR:$clr-text,$FW:400,$FS:16px,$LH:26px);
+}
+.colla{
+    margin-bottom: 30px;
+}
+
+@media (max-width:1015px){
+    .service-img{
+        width: 400px;
+        height: 356px;
+    }
+    .management {
+        margin-bottom: 100px;
+        @include Display($ITEMS:center,$JUSTIFY:space-between,$GAP:50px);
+        flex-direction: column;
+    }
+    .management__title-wrapper{
+    width: 90%;
+    }
+    .management__title-1 {
+        margin-bottom: 16px;
+    }
+    .service__wrapper-2 {
+        margin-bottom: 100px;
+        @include Display($ITEMS:center,$JUSTIFY:space-between,$GAP:50px);
+        flex-direction: column;
+    }
+    .support__title-wrapper {
+        width: 90%;
+    }
+}

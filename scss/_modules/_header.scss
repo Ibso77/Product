@@ -1,0 +1,65 @@
+.site-header {
+   background-color: #EDEDED;
+    padding: 10px 0;
+    padding-bottom: 25px;
+}
+.header {
+    @include Display($ITEMS:center,$JUSTIFY:space-between,$GAP:0px);
+}
+.header__right-wrapper {
+    @include Display($ITEMS:center,$JUSTIFY:start,$GAP:24px);
+}
+.navbar {
+    @include Display($ITEMS:center,$JUSTIFY:start,$GAP:25px);
+}
+.navbar__link {
+    @include Textstyle($CLR:$clr-text,$FW:600,$FS:16px,$LH:28px);
+    transition: all 0.3s;
+    &:hover{
+        color: $clr-green;
+    }
+}
+.header__btn-wrapper {
+    @include Display($ITEMS:center,$JUSTIFY:start,$GAP:24px);
+}
+.header__btn {
+    @include Textstyle($CLR:#173A56,$FW:600,$FS:16px,$LH:100%);
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    background-color: transparent;
+    transition: all 0.3s;
+    &:hover{
+        color: white;
+        border: 1px solid $clr-green;
+        background-color: $clr-green;
+    }
+}
+.header__btn-2 {
+    @include Textstyle($CLR:white,$FW:600,$FS:16px,$LH:100%);
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: 2px solid $clr-green;
+    background-color: $clr-green;
+    transition: all 0.3s;
+    &:hover{
+        background-color: transparent;
+        color: $clr-green;
+    }
+}
+.header__menu-icon{
+    display: none;
+}
+
+@media (max-width:900px){
+    .site-header{
+        box-shadow: 0px -2px 8px 0px #00000040;
+
+    }
+    .header__right-wrapper{
+        display: none;
+    }
+    .header__menu-icon{
+        display: block;
+    }
+}
