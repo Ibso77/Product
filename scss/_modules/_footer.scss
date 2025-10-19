@@ -1,0 +1,77 @@
+.site-footer {
+    margin-top: 150px;
+}
+.footer {
+     @include Display($ITEMS:start,$JUSTIFY:space-between,$GAP:5px);
+}
+.footer__left-wrapper {
+     @include Display($ITEMS:start,$JUSTIFY:start,$GAP:160px);
+}
+.footer__logo-part {
+}
+.socials-wrapper {
+     @include Display($ITEMS:center,$JUSTIFY:start,$GAP:16px);
+    margin-top: 24px;
+}
+.footer__list {
+}
+.footer__item {
+}
+.footer__text-b {
+    margin-bottom: 8px;
+     @include Textstyle($CLR:$clr-text,$FW:600,$FS:20px,$LH:30px);
+}
+.footer__text {
+     @include Textstyle($CLR:$clr-text,$FW:400,$FS:16px,$LH:35px);
+}
+
+.footer__right-wrapper {
+     @include Display($ITEMS:start,$JUSTIFY:start,$GAP:82px);
+}
+.footer__form-wrapper {
+    width: 300px;
+}
+.form-text {
+    margin-bottom: 34px;
+    @include Textstyle($CLR:$clr-text,$FW:600,$FS:20px,$LH:30px);
+}
+.input {
+    border-radius: 4px;
+    width: 325px;
+    height: 48px;
+}
+.form-btn {
+    margin-top: 21px;
+     @include Textstyle($CLR:white,$FW:700,$FS:16px,$LH:100%);
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 2px solid #02897A;
+    background-color: #02897A;
+    transition: all 0.3s;
+    &:hover{
+        background-color: white;
+        color: #02897A;
+    }
+}
+.text-bottom{
+    margin-top: 10px;
+    margin-bottom: 46px;
+    text-align: center;
+    @include Textstyle($CLR:$clr-text,$FW:400,$FS:16px,$LH:30px);
+}
+
+@media (max-width:1050px){
+    .footer {
+     @include Display($ITEMS:center,$JUSTIFY:start,$GAP:32px);
+     flex-direction: column;
+     text-align: center;
+     }
+    .footer__left-wrapper {
+     @include Display($ITEMS:center,$JUSTIFY:start,$GAP:31px);
+     flex-direction: column;
+    }
+    .footer__right-wrapper {
+     @include Display($ITEMS:center,$JUSTIFY:start,$GAP:31px);
+     flex-direction: column;
+    }
+}

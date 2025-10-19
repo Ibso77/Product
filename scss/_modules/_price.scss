@@ -1,0 +1,95 @@
+.price-section {
+    margin-top: 229px;
+}
+.price {
+}
+.price__title {
+    text-align: center;
+    margin-bottom: 8px;
+    @include Textstyle($CLR:$clr-text,$FW:700,$FS:34px,$LH:100%);
+}
+.price__text {
+    text-align: center;
+    margin-bottom: 50px;
+    @include Textstyle($CLR:$clr-text,$FW:500,$FS:16px,$LH:100%);
+}
+.price__list {
+    @include Display($ITEMS:center,$JUSTIFY:space-between,$GAP:5px);
+}
+.price__item {
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px #00000040;
+}
+.pitem {
+    @include Display($ITEMS:center,$JUSTIFY:center,$GAP:0px);
+    flex-direction: column;
+    width: 322px;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 0 5px 2px gray;
+        transform: scale(1.02);
+    }
+}
+.pitem>img{
+    text-align: center;
+}
+.pitem__title {
+    margin-top: 24px;
+    text-align: center;
+    @include Textstyle($CLR:$clr-text,$FW:700,$FS:24px,$LH:40px);
+}
+.pitem__text {
+    text-align: center;
+    @include Textstyle($CLR:$clr-text,$FW:400,$FS:16px,$LH:40px);
+}
+.pitem__text-1 {
+    margin-bottom: 16px;
+    text-align: center;
+    @include Textstyle($CLR:$clr-text,$FW:600,$FS:16px,$LH:22px);
+}
+.pitem__text-2 {
+    text-align: center;
+    @include Textstyle($CLR:$clr-text,$FW:600,$FS:16px,$LH:22px);
+}
+.pitem__btn{
+    margin-top: 38px;
+    margin-bottom: 32px;
+    padding: 11px 18px;
+    border-radius: 8px;
+    background-color: #02897A;
+    border: 1px solid #02897A;
+    @include Textstyle($CLR:white,$FW:600,$FS:18px,$LH:100%);
+    transition: all 0.3s;
+    &:hover{
+        background-color: transparent;
+        color: #02897A;
+    }
+}
+.p-item{
+    background-color: #02897A;
+}
+.p-title{
+    color: white;
+}
+.p-text{
+    color: white;
+}
+.p-text-1{
+    color: white;
+}
+.p-btn{
+    background-color: white;
+    color: #02897A;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+@media (max-width:1000px){
+    .price__list {
+    @include Display($ITEMS:center,$JUSTIFY:center,$GAP:32px);
+    flex-direction: column;
+    }
+}

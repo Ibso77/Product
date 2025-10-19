@@ -1,5 +1,8 @@
 .product-section {
-    background-color: #EDEDED;
+    background-image: url(/images/product-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
     padding-bottom: 50px;
 }
 .product__title-wrapper{
